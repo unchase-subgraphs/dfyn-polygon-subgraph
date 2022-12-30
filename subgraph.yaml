@@ -1,4 +1,4 @@
-specVersion: 0.0.4
+specVersion: 0.0.5
 description: Dfyn is a fully decentralized multi-chain protocol which relies on automated market makers (AMMs) instead of order books to enable token swaps.
 repository: https://github.com/unchase-subgraphs/dfyn-polygon-subgraph
 schema:
@@ -13,7 +13,7 @@ dataSources:
       startBlock: 5436831
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
         - Pair
@@ -39,7 +39,7 @@ templates:
       abi: Pair
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.7
       language: wasm/assemblyscript
       file: ./src/core.ts
       entities:
